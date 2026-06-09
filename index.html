@@ -5,9 +5,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfect Reputation — Manage Your Online Reputation</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Override Poppins references with Epilogue */
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        a,
+        button,
+        input,
+        textarea,
+        select,
+        label,
+        span,
+        div,
+        li {
+            font-family: 'Epilogue', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -277,8 +301,8 @@
         <div class="container">
             <div class="section-head">
                 <h2>Our process</h2>
-                <p style="color:var(--blue);font-weight:600;font-size:1rem">We develop a custom plan for your specific
-                    needs.</p>
+                <p style="color:rgb(58, 125, 202);font-weight:600;font-size:1rem">We develop a custom plan for your
+                    specific needs.</p>
             </div>
             <div class="process-wrap">
                 <div class="process-grid">
@@ -297,8 +321,46 @@
                         <h3>3.&nbsp; Permanent Removal</h3>
                         <p>Your online reputation is fully restored, once we remove content, it's gone for good.</p>
                     </div>
+                    <!-- Decorative connector arrows -->
+                    <img class="proc-arrow proc-arrow-1"
+                        src="https://d9hhrg4mnvzow.cloudfront.net/go.perfect-reputation.com/0a3ca71a-arrow-blue_107j020000000000000028.png"
+                        alt="" aria-hidden="false">
+                    <img class="proc-arrow proc-arrow-2"
+                        src="https://d9hhrg4mnvzow.cloudfront.net/go.perfect-reputation.com/9560dc90-arrow-blue-rotate_107j020000000000000028.png"
+                        alt="" aria-hidden="false">
                 </div>
             </div>
+            <style>
+                .process-wrap .process-grid {
+                    position: relative;
+                }
+
+                .proc-arrow {
+                    position: absolute;
+                    pointer-events: none;
+                    z-index: 1;
+                    height: auto;
+                    width: 180px;
+                }
+
+                /* Arrow 1: bridges card 1 -> card 2, sits above the cards */
+                .proc-arrow-1 {
+                    top: -40px;
+                    left: 28%;
+                }
+
+                /* Arrow 2: bridges card 2 -> card 3, sits below the cards */
+                .proc-arrow-2 {
+                    bottom: -40px;
+                    left: 58%;
+                }
+
+                @media (max-width: 900px) {
+                    .proc-arrow {
+                        display: none;
+                    }
+                }
+            </style>
         </div>
     </section>
 
